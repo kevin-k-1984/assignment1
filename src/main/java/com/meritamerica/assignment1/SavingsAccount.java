@@ -9,29 +9,35 @@ public class SavingsAccount {
 		balance = 0.0;
 	}
 	
-	public SavingsAccount(double balance, double interestRate) {
-		deposit(balance);
-		
-		
+	public SavingsAccount(double openingBalance) {
+		deposit(openingBalance);
 	}
 	
 	public double getBalance() {
 		return balance;
 	}
 	
-	public void deposit(double amount) {
-		
-	}
-	
-	public void widthdraw(double amount) {
-		
-	}
-	
 	public double getInterestRate() {
 		return interestRate;
 	}
 	
-	public void setInterestRate(double rate) {
+	public boolean deposit(double amount) {
 		
+		return true;
+	}
+	
+	public boolean withdraw(double amount) {
+		
+		return true;
+	}
+	
+	public double futureValue(int years) {
+		
+		return 0.0;
+	}
+	
+	public String toString() {
+		
+		return "";
 	}
 }

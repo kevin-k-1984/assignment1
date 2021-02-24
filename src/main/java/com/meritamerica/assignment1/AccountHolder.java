@@ -59,12 +59,12 @@ public class AccountHolder {
 		this.ssn = ssn;
 	}
 
-//	public double getCheckingAccountBalance() {
-//		return checkingAccountBalance;
-//	}
-//
-//	public double getSavingsAccountBalance() {
-//		return savingsAccountBalance;
-//	}
+	public CheckingAccount getCheckingAccount() {
+		return checkingAccount;
+	}
+
+	public SavingsAccount getSavingsAccount() {
+		return savingsAccount;
+	}
 	
 }
