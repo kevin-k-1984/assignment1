@@ -5,7 +5,7 @@ public class AccountHolder {
 	private String firstName;
 	private String middleName;
 	private String lastName;
-	private String ssn;
+	private String SSN;
 	private CheckingAccount checkingAccount;
 	private SavingsAccount savingsAccount;
 	
@@ -13,17 +13,17 @@ public class AccountHolder {
 		firstName = "";
 		middleName = "";
 		lastName = "";
-		ssn = "";
+		SSN = "";
 		checkingAccount = new CheckingAccount();
 		savingsAccount = new SavingsAccount();
 	}
 	
-	public AccountHolder(String firstName, String middleName, String lastName, String ssn, 
+	public AccountHolder(String firstName, String middleName, String lastName, String SSN, 
 			double checkingAccountOpeningBalance, double savingsAccountOpeningBalance) {
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
-		this.ssn = ssn;
+		this.SSN = SSN;
 		
 	}
 
@@ -51,12 +51,12 @@ public class AccountHolder {
 		this.lastName = lastName;
 	}
 
-	public String getSsn() {
-		return ssn;
+	public String getSSN() {
+		return SSN;
 	}
 
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
+	public void setSSN(String ssn) {
+		this.SSN = ssn;
 	}
 
 	public CheckingAccount getCheckingAccount() {
@@ -65,6 +65,10 @@ public class AccountHolder {
 
 	public SavingsAccount getSavingsAccount() {
 		return savingsAccount;
+	}
+	
+	public String toString() {
+		return "";
 	}
 	
 }
