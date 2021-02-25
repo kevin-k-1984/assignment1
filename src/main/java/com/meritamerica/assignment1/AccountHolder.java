@@ -25,6 +25,9 @@ public class AccountHolder {
 		this.lastName = lastName;
 		this.SSN = SSN;
 		
+	this.checkingAccount = new CheckingAccount(checkingAccountOpeningBalance);
+	this.savingsAccount = new SavingsAccount(savingsAccountOpeningBalance);
+		
 	}
 
 	public String getFirstName() {
@@ -68,7 +71,7 @@ public class AccountHolder {
 	}
 	
 	public String toString() {
-		return "";
+		return "hi" ;
 	}
 	
-}
+} 

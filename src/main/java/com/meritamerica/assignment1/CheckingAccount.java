@@ -6,19 +6,21 @@ public class CheckingAccount {
 	private double interestRate;
 	
 	public CheckingAccount() {
-		balance = 0.0;
+		this.balance = 0.0;
+		this.interestRate = 0.01;
 	}
 	
 	public CheckingAccount(double openingBalance) {
 		deposit(openingBalance);
+		this.interestRate = 0.01;
 	}
 	
 	public double getBalance() {
-		return balance;
+		return this.balance;
 	}
 	
 	public double getInterestRate() {
-		return interestRate;
+		return this.interestRate;
 	}
 	
 	public boolean deposit(double amount) {
