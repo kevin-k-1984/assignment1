@@ -20,7 +20,7 @@ public class SavingsAccount {
 	}
 	
 	//This allows the balance to be called from another class.
-	public double getBalance() {
+	public double getBalance() { 
 		return balance;
 	}
 	

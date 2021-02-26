@@ -36,7 +36,7 @@ public class CheckingAccount {
 		return true;
 	}
 	/* This boolean rejects are negative withdraw amount, but if true, takes the current balance, subtracts
-	 * amount, and  sets the sum  to new balance.
+	 * amount, and  sets the sum  to new balance. 
 	 */
 	public boolean withdraw(double amount) {
 		if (balance - amount < 0) { return false; }
