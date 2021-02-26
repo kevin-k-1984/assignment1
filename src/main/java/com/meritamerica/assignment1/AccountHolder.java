@@ -71,7 +71,9 @@ public class AccountHolder {
 	}
 	
 	public String toString() {
-		return "hi" ;
+		return "Name: " + firstName + " " + middleName + " " + lastName + "\n" +
+				"SSN: " + SSN + "\n" +
+				checkingAccount.toString() + savingsAccount.toString();
 	}
 	
 } 
