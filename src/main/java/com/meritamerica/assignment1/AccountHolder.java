@@ -9,17 +9,17 @@ public class AccountHolder {
 	private String middleName;
 	private String lastName;
 	private String SSN;
-	private CheckingAccount checkingAccount;
-	private SavingsAccount savingsAccount;
+	private final CheckingAccount checkingAccount;
+	private final SavingsAccount savingsAccount;
 	
 	//  This method allows to be called with no information passed in.
 	public AccountHolder() {
-		firstName = "";
-		middleName = "";
-		lastName = "";
-		SSN = "";
-		checkingAccount = new CheckingAccount();
-		savingsAccount = new SavingsAccount();
+		this.firstName = "";
+		this.middleName = "";
+		this.lastName = "";
+		this.SSN = "";
+		this.checkingAccount = new CheckingAccount();
+		this.savingsAccount = new SavingsAccount();
 	}
 	
 	/* This method allows for AccountHolder to be defined with parameters passed in. 
@@ -38,7 +38,7 @@ public class AccountHolder {
 
 	//This method allows the firstName variable to be called from another class.
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 
 	//This sets whatever is is passed in to this class' variable.
@@ -50,15 +50,17 @@ public class AccountHolder {
 	public String getMiddleName() {
 		return middleName;
 	}
-	//This sets whatever is is passed in to this class' variable.
+
+	//This sets whatever is passed in to this class' variable.
 	public void setMiddleName(String middleName) {
 		this.middleName = middleName;
 	}
 	
 	//This method allows the lastName variable to be called from another class.
 	public String getLastName() {
-		return lastName;
+		return this.lastName;
 	}
+
 	//This sets whatever is is passed in to this class' variable.
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -66,7 +68,7 @@ public class AccountHolder {
 
 	//This method allows the SSN variable to be called from another class.	
 	public String getSSN() {
-		return SSN;
+		return this.SSN;
 	}
 
 	//This sets whatever is is passed in to this class' variable.
@@ -76,19 +78,19 @@ public class AccountHolder {
 
 	//This method allows the CheckingAccount variable to be called from another class.	
 	public CheckingAccount getCheckingAccount() {
-		return checkingAccount;
+		return this.checkingAccount;
 	}
 
 	//This method allows the SavingsAccount variable to be called from another class.	
 	public SavingsAccount getSavingsAccount() {
-		return savingsAccount;
+		return this.savingsAccount;
 	}
 
 	//This method concatenates the information and prints as a string.
 	public String toString() {
-		return "Name: " + firstName + " " + middleName + " " + lastName + "\n" +
-				"SSN: " + SSN + "\n" +
-				checkingAccount.toString() + savingsAccount.toString();
+		return "Name: " + this.firstName + " " + this.middleName + " " + this.lastName + "\n" +
+				"SSN: " + this.SSN + "\n" +
+				this.checkingAccount.toString() + this.savingsAccount.toString();
 	}
 	
 } 
