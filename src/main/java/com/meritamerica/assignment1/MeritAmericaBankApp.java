@@ -12,7 +12,6 @@ public class MeritAmericaBankApp {
 		/* Creates a new object "account1" from it's  class. Allows  for  firstName,  middleName, lastName, SSN,
 		 * and openingBalance of checking and savings to be passed in. 
 		 */
-		
 		AccountHolder account1 = new AccountHolder("John","Apple","Smith","123-45-6789",100,1000);
 		System.out.println(account1.toString());
 		account1.getCheckingAccount().deposit(500);
